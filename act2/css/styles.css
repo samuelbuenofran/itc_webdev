@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 70px auto 50px;
+    grid-template-areas: 
+    "top sidebar"
+    "main_content sidebar"
+    "bottom sidebar";
+}
+
+.sidebar {
+    background-color: aqua;
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    background-color: blueviolet;
+    grid-area: top
+}
+
+.main_content {
+    background-color: brown;
+    grid-area: main_content
+}
+
+.bottom {
+    background-color: chartreuse;
+    grid-area: bottom
+}
+
+#sidebar_items {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items:flex-end;
+}
+
+#sidebar_items img {
+    margin-top: 20px;
+}
