@@ -6,28 +6,55 @@ html, body {
 
 body {
     display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: 70px auto 50px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 80px auto 150px 50px;
     grid-template-areas: 
-    "top sidebar"
-    "main_content sidebar"
-    "bottom sidebar";
+    "canton top top"
+    "middle_image middle_image sidebar"
+    "main_content main_content sidebar"
+    "bottom bottom sidebar"
+}
+
+/* Do not change the grid, change the flex to get the 1 1 1 effect; */
+
+.canton {
+    background-color: tan;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+
+    grid-area: canton
 }
 
 .sidebar {
     background-color: aqua;
-    grid-area: sidebar;
     display: flex;
     flex-direction: column;
+    align-items:center;
+    justify-items:center;
+
+    grid-area: sidebar
 }
 
 .top {
     background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+
     grid-area: top
 }
 
 .main_content {
     background-color: brown;
+    display: flex;
+    align-items:center;
+    justify-items:center;
+    width: auto;
+    height: auto;
+
     grid-area: main_content
 }
 
@@ -36,13 +63,36 @@ body {
     grid-area: bottom
 }
 
-#sidebar_items {
+.middle_image {
+    background-color: brown;
     display: flex;
-    flex-direction: column-reverse;
+    align-items: center;
+    justify-items: center;
+    width: auto;
+    height: auto;
+    grid-area: middle_image
+}
+
+.major_illustrations {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+/* #sidebar_items {
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items:flex-end;
 }
 
 #sidebar_items img {
     margin-top: 20px;
-}
+} */
+
+/* .top_left_img {
+    width: 25%;
+    height: 25%
+} */
