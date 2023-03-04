@@ -9,7 +9,9 @@ for (let i = 1; i < 6; i++) {
     temp += Number(read(chalk.green(`Enter input #${i}: `)));
 }
 
-print(temp / 5);
+print(`The mean is: ${temp / 5}`);
+
+
 
  
 
