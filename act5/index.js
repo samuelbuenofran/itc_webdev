@@ -1,3 +1,6 @@
+import PromptSync from "prompt-sync";
+import chalk from "chalk";
+
 class Estudante {
   constructor(nome, ra, email, curso, disciplinas) {
     this.nome = nome;
