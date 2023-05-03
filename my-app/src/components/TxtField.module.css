@@ -1,0 +1,15 @@
+.txtField {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 5px;
+  width: 100%;
+}
+
+.txtLabel {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 5px;
+    color: #ff0000;
+    
+}

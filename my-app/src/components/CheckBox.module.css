@@ -1,0 +1,12 @@
+.checkBox {
+    font-size: 0.6em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.txtLabel {
+    font-weight: solid;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    color: #ffffff;
+}

@@ -1,0 +1,21 @@
+.radioBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.txtLabel {
+    font-weight: bold;
+    font-size: 0.2em;
+    margin: 5px;
+    color: #ff0000;
+    
+}
