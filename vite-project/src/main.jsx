@@ -6,7 +6,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Create from "./pages/create";
-import { queryClient, QueryClientProvider } from "@tanstack/react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +22,8 @@ const router = createBrowserRouter([
     element: <Create />,
   },
 ]);
+
+const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
