@@ -10,9 +10,16 @@ import { useForm } from "react-hook-form";
 
 const Create = () => {
   const { reset, register, handleSubmit } = useForm();
+
+  const {mutate: mutateCreateUser} = 
+  
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+
   return (
     <Container>
-      <form>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <Stack>
           <FormControl>
             <FormLabel>Name</FormLabel>
@@ -31,6 +38,9 @@ const Create = () => {
             />
           </FormControl>
           <Button colorScheme="blue">Register </Button>
+          <Button type="button" onClick={() => reset()} colorScheme="red">
+            Clear
+          </Button>
         </Stack>
       </form>
     </Container>
