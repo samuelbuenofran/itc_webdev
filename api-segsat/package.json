@@ -1,5 +1,5 @@
 {
-  "name": "api-fatec",
+  "name": "api-segsat",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^3.0.3"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
