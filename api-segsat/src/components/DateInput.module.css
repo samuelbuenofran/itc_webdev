@@ -1,0 +1,14 @@
+.dateInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.txtLabel {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 5px;
+    color: #ff0000;
+}

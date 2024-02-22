@@ -4,7 +4,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "npx nodemon src/server.js",
+    "dev": "vite",
+    "run-server": "npx nodemon src/server.js",
+    "start": "node src/server.js",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,11 +20,15 @@
     "nodemon": "^3.0.3"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
     "body-parser": "^1.20.2",
     "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "sequelize": "^6.31.0",
     "sqlite": "^4.1.2",
-    "sqlite3": "^5.1.6"
+    "sqlite3": "^5.1.6",
+    "vite": "^5.1.4"
   },
   "description": ""
 }

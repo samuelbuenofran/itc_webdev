@@ -8,6 +8,14 @@ export default defineConfig({
     outDir: "build",
   },
   server: {
-    port: 3000,
+    port: 3001,
+  },
+  preview: {
+    port: 3002,
+  },
+  resolve: {
+    alias: {
+      "@": "/src",
+    },
   },
 });

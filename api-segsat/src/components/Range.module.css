@@ -1,0 +1,15 @@
+.range {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txtLabel {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 5px;
+    color: #ff0000;
+}
