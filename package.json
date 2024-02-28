@@ -2,5 +2,8 @@
   "dependencies": {
     "create-react-app": "^1.2.1",
     "tree-sitter-cli": "^0.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
