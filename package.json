@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "create-react-app": "^1.2.1"
+    "create-react-app": "^1.2.1",
+    "tree-sitter-cli": "^0.21.0"
   }
 }

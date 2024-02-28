@@ -32,6 +32,8 @@ class Model extends Car {
     this.model = mod;
   }  
   show() {
+    // the "this" keyword is referring to the Car class method present()
+    // think of "this" as a pointer to the topmost class.
       return this.present() + ', it is a ' + this.model
   }
 
